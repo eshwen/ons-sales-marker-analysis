@@ -22,4 +22,8 @@ The aim of this project is to refactor the manual steps for performing the sales
 
 2) Save the data that is returned by the queries, keeping note of the paths, and which files correspond to which time periods.
 
-3) Feed this into <WORK IN PROGRESS>
+3) Feed each file one-by-one into [SMA_parse_queried_files.py](./SMA_parse_queried_files.py) to parse the data and ...
+
+   ```sh
+   python SMA_parse_queried_files.py <input file>
+   ```
