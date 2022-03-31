@@ -162,7 +162,6 @@ def parse_args():
     parser.add_argument("item_category", choices=["alcohol", "clothing", "furniture"], help="Category to perform analysis for.")
     parser.add_argument("-m", "--month_of_interest", type=str, default=datetime.datetime.today().strftime("%Y%m"), help="Month of interest in fomat YYYYMM")
     parser.add_argument("-i", "--items_to_ignore", type=int, nargs="*", default=[], help="Item number(s) to ignore in analysis. Default intelligently ignores.")
-    parser.add_argument("-o", "--output_file", default=Path(__file__).parent / "output.xlsx", help="Output file.")
 
     args = parser.parse_args()
     return args
